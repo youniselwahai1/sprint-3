@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Morocco Population Data
+  p This page displays the population data for cities in Morocco.
+
+  table
+    thead
+      tr
+        th City
+        th Population
+    tbody
+      each item in data
+        tr
+          td= item.city
+          td= item.population
+``
